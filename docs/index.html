@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOXH Finder — Tra cứu nhà ở xã hội Hà Nội</title>
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --panel: #ffffff;
+    --border: #e2e2df;
+    --text: #1a1a1a;
+    --text-dim: #6b6b68;
+    --text-faint: #9a9a96;
+    --accent: #1a6b4a;
+    --accent-bg: #e6f2ec;
+    --warn-bg: #fff7e0;
+    --warn-border: #e8cf7a;
+    --danger: #b3401f;
+    --link: #14508a;
+    --grey-row-bg: #f0f0ee;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+  }
+  .banner {
+    background: var(--warn-bg);
+    border-bottom: 1px solid var(--warn-border);
+    padding: 10px 16px;
+    font-size: 14px;
+    text-align: center;
+    color: #6b5410;
+  }
+  header.top {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 16px 8px;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .subtitle { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
+  .meta-line { color: var(--text-faint); font-size: 12px; }
+
+  .filters {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .filter-field label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+  }
+  .filter-field input, .filter-field select {
+    width: 100%;
+    padding: 7px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    color: var(--text);
+  }
+
+  main { max-width: 1000px; margin: 0 auto; padding: 0 16px 60px; }
+
+  section.list-block { margin-bottom: 32px; }
+  .list-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .list-header h2 { font-size: 17px; margin: 0; }
+  .list-count {
+    font-size: 13px;
+    color: var(--text-dim);
+    background: var(--border);
+    border-radius: 999px;
+    padding: 1px 9px;
+  }
+  .list-desc { font-size: 13px; color: var(--text-dim); margin: 2px 0 12px; }
+
+  .row {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+  }
+  .row.greyed { background: var(--grey-row-bg); opacity: 0.7; }
+  .row-title { font-size: 14.5px; font-weight: 600; margin-bottom: 2px; }
+  .row-title a { color: var(--link); text-decoration: none; }
+  .row-title a:hover { text-decoration: underline; }
+  .row-date { font-size: 12px; color: var(--text-faint); margin-bottom: 8px; }
+
+  .field-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 8px 16px;
+  }
+  .field .field-label { font-size: 11px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.02em; }
+  .field .field-value { font-size: 14px; }
+  .field .field-raw { font-size: 11.5px; color: var(--text-faint); margin-top: 1px; }
+  .field .field-value.low-conf { color: #8a6100; }
+  .field .field-value.empty { color: var(--text-faint); font-style: italic; }
+
+  .badge-quarter {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 1px 8px;
+    font-size: 13px;
+  }
+  .badge-quarter.ended { background: var(--border); color: var(--text-dim); }
+
+  .luu-y { margin-top: 8px; font-size: 12.5px; color: var(--text-dim); }
+  .luu-y ul { margin: 3px 0 0; padding-left: 18px; }
+
+  .error-line { color: var(--danger); font-size: 12.5px; margin-top: 6px; }
+  .empty-state { color: var(--text-faint); font-size: 13.5px; padding: 10px 2px; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  Công cụ này chỉ để lọc nhanh. Trước khi nộp hồ sơ, hãy mở thông báo gốc để kiểm tra.
+</div>
+
+<header class="top">
+  <h1>NOXH Finder</h1>
+  <div class="subtitle">Tra cứu nhanh thông báo nhà ở xã hội (NOXH) do Sở Xây dựng Hà Nội công bố.</div>
+  <div class="meta-line" id="metaLine">Đang tải dữ liệu…</div>
+</header>
+
+<div class="filters">
+  <div class="filter-field">
+    <label for="fMaxPrice">Giá bán tối đa (đ/m²)</label>
+    <input type="number" id="fMaxPrice" step="500000" min="0">
+  </div>
+  <div class="filter-field">
+    <label for="fDaysAhead">Số ngày tối thiểu</label>
+    <input type="number" id="fDaysAhead" step="1" min="0">
+  </div>
+  <div class="filter-field">
+    <label for="fDateMode">Chế độ ngày</label>
+    <select id="fDateMode">
+      <option value="closes">Còn hạn ít nhất N ngày</option>
+      <option value="opens">Bắt đầu sau N ngày</option>
+    </select>
+  </div>
+  <div class="filter-field">
+    <label for="fKeyword">Từ khóa địa điểm</label>
+    <input type="text" id="fKeyword" placeholder="vd: Hoàng Mai, Thạch Thất...">
+  </div>
+</div>
+
+<main>
+  <section class="list-block">
+    <div class="list-header">
+      <h2>Kết quả</h2>
+      <span class="list-count" id="countResults">0</span>
+    </div>
+    <div class="list-desc">Đã trích xuất đầy đủ, có mốc ngày cụ thể, khớp bộ lọc hiện tại.</div>
+    <div id="listResults"></div>
+  </section>
+
+  <section class="list-block">
+    <div class="list-header">
+      <h2>Sắp mở</h2>
+      <span class="list-count" id="countUpcoming">0</span>
+    </div>
+    <div class="list-desc">Chỉ có mốc quý (không lọc theo số ngày được). Quý đã qua hiển thị mờ.</div>
+    <div id="listUpcoming"></div>
+  </section>
+
+  <section class="list-block">
+    <div class="list-header">
+      <h2>Cần kiểm tra</h2>
+      <span class="list-count" id="countReview">0</span>
+    </div>
+    <div class="list-desc">Trích xuất chưa chắc chắn hoặc lỗi tải trang — số dòng lớn bất thường là dấu hiệu cách viết trên trang gốc đã đổi.</div>
+    <div id="listReview"></div>
+  </section>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var state = { data: null };
+
+  // Build the combining-diacritics regex from code points (U+0300..U+036F)
+  // rather than embedding literal combining characters in the source, which
+  // are fragile across editors/encodings.
+  var COMBINING_MARKS = "";
+  for (var _cp = 0x0300; _cp <= 0x036f; _cp++) COMBINING_MARKS += String.fromCharCode(_cp);
+  var COMBINING_RE = new RegExp("[" + COMBINING_MARKS + "]", "g");
+
+  function normalizeVN(s) {
+    if (!s) return "";
+    return s
+      .normalize("NFD")
+      .replace(COMBINING_RE, "")
+      .replace(/đ/gi, "d")
+      .toLowerCase();
+  }
+
+  function escapeHtml(s) {
+    if (s === null || s === undefined) return "";
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function formatVnd(n) {
+    if (n === null || n === undefined) return null;
+    return n.toLocaleString("vi-VN") + " đ/m²";
+  }
+
+  function todayISO() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+
+  function addDaysISO(iso, days) {
+    var d = new Date(iso + "T00:00:00");
+    d.setDate(d.getDate() + days);
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+
+  function quarterRange(quarter, year) {
+    var startMonth = (quarter - 1) * 3;
+    var start = new Date(year, startMonth, 1);
+    var end = new Date(year, startMonth + 3, 0);
+    return { start: start, end: end };
+  }
+
+  function matchesKeyword(project, keyword) {
+    if (!keyword) return true;
+    var kw = normalizeVN(keyword);
+    var hay = normalizeVN((project.dia_diem && project.dia_diem.value ? project.dia_diem.value : "") + " " + project.title);
+    return hay.indexOf(kw) !== -1;
+  }
+
+  function matchesPrice(project, maxPrice) {
+    if (maxPrice === null || maxPrice === undefined || maxPrice === "") return true;
+    var v = project.gia_ban && project.gia_ban.value;
+    if (v === null || v === undefined) return false;
+    return v <= maxPrice;
+  }
+
+  function matchesDateFilter(project, daysAhead, mode) {
+    var t = project.thoi_gian_nop_ho_so;
+    if (!t || t.kind !== "range") return false;
+    var today = todayISO();
+    var threshold = addDaysISO(today, daysAhead);
+    if (mode === "opens") {
+      return t.start >= threshold;
+    }
+    // "closes": still open at least N days from today
+    return t.end >= threshold;
+  }
+
+  function fieldBlock(label, valueHtml, rawLine, extraClass) {
+    var cls = "field-value" + (extraClass ? " " + extraClass : "");
+    var html = '<div class="field">';
+    html += '<div class="field-label">' + escapeHtml(label) + "</div>";
+    html += '<div class="' + cls + '">' + valueHtml + "</div>";
+    if (rawLine) {
+      html += '<div class="field-raw">' + escapeHtml(rawLine) + "</div>";
+    }
+    html += "</div>";
+    return html;
+  }
+
+  function renderDateField(t) {
+    if (!t || t.kind === "none") {
+      return fieldBlock("Thời gian nộp hồ sơ", '<span class="empty">chưa rõ</span>', null);
+    }
+    if (t.kind === "range") {
+      return fieldBlock("Thời gian nộp hồ sơ", escapeHtml(t.start) + " → " + escapeHtml(t.end), t.raw_line, t.confidence === "low" ? "low-conf" : "");
+    }
+    if (t.kind === "quarter") {
+      return fieldBlock("Thời gian nộp hồ sơ", "Quý " + t.quarter + "/" + t.year, t.raw_line);
+    }
+    return "";
+  }
+
+  function renderPriceField(g) {
+    if (!g || g.value === null || g.value === undefined) {
+      return fieldBlock("Giá bán", '<span class="empty">chưa rõ</span>', null);
+    }
+    return fieldBlock("Giá bán", escapeHtml(formatVnd(g.value)), g.raw_line, g.confidence === "low" ? "low-conf" : "");
+  }
+
+  function renderLocationField(d) {
+    if (!d || !d.value) {
+      return fieldBlock("Địa điểm", '<span class="empty">chưa rõ</span>', null);
+    }
+    return fieldBlock("Địa điểm", escapeHtml(d.value), d.raw_line, d.confidence === "low" ? "low-conf" : "");
+  }
+
+  function renderUnitsField(s) {
+    if (!s || s.value === null || s.value === undefined) {
+      return fieldBlock("Số căn để bán", '<span class="empty">chưa rõ</span>', null);
+    }
+    return fieldBlock("Số căn để bán", escapeHtml(String(s.value)) + " căn", s.raw_line, s.confidence === "low" ? "low-conf" : "");
+  }
+
+  function rowShell(project, innerHtml, greyed) {
+    var html = '<div class="row' + (greyed ? " greyed" : "") + '">';
+    html += '<div class="row-title"><a href="' + escapeHtml(project.url) + '" target="_blank" rel="noopener">' + escapeHtml(project.title) + "</a></div>";
+    html += '<div class="row-date">' + escapeHtml(project.published_at || "") + "</div>";
+    html += innerHtml;
+    html += "</div>";
+    return html;
+  }
+
+  function renderResultRow(project) {
+    var inner = '<div class="field-grid">';
+    inner += renderLocationField(project.dia_diem);
+    inner += renderPriceField(project.gia_ban);
+    inner += renderDateField(project.thoi_gian_nop_ho_so);
+    inner += renderUnitsField(project.so_can_ban);
+    inner += "</div>";
+    if (project.luu_y && project.luu_y.length) {
+      inner += '<div class="luu-y">Lưu ý:<ul>' + project.luu_y.map(function (l) { return "<li>" + escapeHtml(l) + "</li>"; }).join("") + "</ul></div>";
+    }
+    return rowShell(project, inner, false);
+  }
+
+  function renderUpcomingRow(project) {
+    var t = project.thoi_gian_nop_ho_so;
+    var range = quarterRange(t.quarter, t.year);
+    var ended = range.end < new Date();
+    var inner = '<div class="field-grid">';
+    inner += renderLocationField(project.dia_diem);
+    inner += renderPriceField(project.gia_ban);
+    inner += fieldBlock("Thời gian nộp hồ sơ", '<span class="badge-quarter' + (ended ? " ended" : "") + '">Quý ' + t.quarter + "/" + t.year + (ended ? " (đã qua)" : "") + "</span>", t.raw_line);
+    inner += renderUnitsField(project.so_can_ban);
+    inner += "</div>";
+    return rowShell(project, inner, ended);
+  }
+
+  function collectRawLines(project) {
+    var lines = [];
+    ["dia_diem", "so_can_ban", "gia_ban", "gia_thue", "gia_thue_mua"].forEach(function (key) {
+      var f = project[key];
+      if (f && f.raw_line) lines.push({ label: key, text: f.raw_line });
+    });
+    if (project.thoi_gian_nop_ho_so && project.thoi_gian_nop_ho_so.raw_line) {
+      lines.push({ label: "thoi_gian_nop_ho_so", text: project.thoi_gian_nop_ho_so.raw_line });
+    }
+    return lines;
+  }
+
+  function renderReviewRow(project) {
+    var inner = "";
+    if (project.status === "failed" && project.error) {
+      inner += '<div class="error-line">Lỗi tải trang: ' + escapeHtml(project.error) + "</div>";
+    }
+    var rawLines = collectRawLines(project);
+    if (rawLines.length) {
+      inner += '<div class="luu-y">Dòng gốc đã bắt được:<ul>' + rawLines.map(function (l) { return "<li>" + escapeHtml(l.text) + "</li>"; }).join("") + "</ul></div>";
+    } else if (!project.error) {
+      inner += '<div class="empty-state">Không trích xuất được nội dung nào — mở thông báo gốc để kiểm tra.</div>';
+    }
+    return rowShell(project, inner, false);
+  }
+
+  function render() {
+    var data = state.data;
+    if (!data) return;
+
+    var maxPrice = document.getElementById("fMaxPrice").value;
+    maxPrice = maxPrice === "" ? null : Number(maxPrice);
+    var daysAhead = Number(document.getElementById("fDaysAhead").value || 0);
+    var mode = document.getElementById("fDateMode").value;
+    var keyword = document.getElementById("fKeyword").value;
+
+    var results = [];
+    var upcoming = [];
+    var review = [];
+
+    // Partition first (kind:"quarter" always lands in "Sắp mở", regardless of
+    // status — a quarter-only date makes a record low_confidence by design,
+    // see extract.py's _determine_status, but it still belongs in its own
+    // list rather than the generic review pile), then filter within a list.
+    data.projects.forEach(function (p) {
+      var t = p.thoi_gian_nop_ho_so;
+      if (p.status === "parsed" && t && t.kind === "range") {
+        if (matchesPrice(p, maxPrice) && matchesKeyword(p, keyword) && matchesDateFilter(p, daysAhead, mode)) {
+          results.push(p);
+        }
+        return;
+      }
+      if (t && t.kind === "quarter") {
+        if (matchesPrice(p, maxPrice) && matchesKeyword(p, keyword)) upcoming.push(p);
+        return;
+      }
+      if (p.status === "low_confidence" || p.status === "failed") {
+        review.push(p);
+      }
+    });
+
+    document.getElementById("countResults").textContent = results.length;
+    document.getElementById("countUpcoming").textContent = upcoming.length;
+    document.getElementById("countReview").textContent = review.length;
+
+    document.getElementById("listResults").innerHTML = results.length
+      ? results.map(renderResultRow).join("")
+      : '<div class="empty-state">Không có dự án nào khớp bộ lọc hiện tại.</div>';
+
+    document.getElementById("listUpcoming").innerHTML = upcoming.length
+      ? upcoming.map(renderUpcomingRow).join("")
+      : '<div class="empty-state">Không có dự án sắp mở nào khớp bộ lọc.</div>';
+
+    document.getElementById("listReview").innerHTML = review.length
+      ? review.map(renderReviewRow).join("")
+      : '<div class="empty-state">Không có mục nào cần kiểm tra.</div>';
+  }
+
+  function applyDefaults(meta) {
+    var d = meta.defaults || {};
+    document.getElementById("fMaxPrice").value = d.max_price != null ? d.max_price : "";
+    document.getElementById("fDaysAhead").value = d.days_ahead != null ? d.days_ahead : 30;
+    document.getElementById("fDateMode").value = d.date_mode || "closes";
+  }
+
+  function init() {
+    fetch("projects.json", { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        state.data = data;
+        applyDefaults(data.meta);
+        var m = data.meta;
+        document.getElementById("metaLine").textContent =
+          "Cập nhật: " + m.crawled_at + " · Nguồn: " + m.base_url + " · Tổng: " + m.total +
+          " (parsed " + m.counts.parsed + ", low_confidence " + m.counts.low_confidence + ", failed " + m.counts.failed + ")";
+        render();
+      })
+      .catch(function (err) {
+        document.getElementById("metaLine").textContent = "Không tải được projects.json: " + err.message;
+      });
+
+    ["fMaxPrice", "fDaysAhead", "fDateMode", "fKeyword"].forEach(function (id) {
+      document.getElementById(id).addEventListener("input", render);
+      document.getElementById(id).addEventListener("change", render);
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+
+</body>
+</html>

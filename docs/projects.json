@@ -1,0 +1,951 @@
+{
+  "meta": {
+    "crawled_at": "2026-08-29T21:48:31+07:00",
+    "site": "demo",
+    "base_url": "https://soxaydung-demo.hanoi.gov.vn",
+    "total": 20,
+    "counts": {
+      "parsed": 0,
+      "low_confidence": 5,
+      "failed": 15
+    },
+    "defaults": {
+      "max_price": 20000000,
+      "days_ahead": 30,
+      "date_mode": "closes"
+    }
+  },
+  "projects": [
+    {
+      "id": "2661260828152802271",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-viet-hung-phuong-xuan-phuong-2661260828152802271.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại phường Việt Hưng, phường Xuân Phương)",
+      "published_at": "2026-08-28",
+      "crawled_at": "2026-08-29T21:46:38+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại phường Việt Hưng, phường Xuân Phương)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260825103330676",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-xa-phuc-thinh-phuong-thuong-cat-2661260825103330676.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại xã Phúc Thịnh, phường Thượng Cát)",
+      "published_at": "2026-08-25",
+      "crawled_at": "2026-08-29T21:46:43+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại xã Phúc Thịnh, phường Thượng Cát)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260822182402458",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/thong-tin-de-xuat-du-an-dau-tu-xay-dung-nha-o-xa-hoi-tren-dia-ban-thanh-pho-tai-phuong-phu-dien-phuong-viet-hung-2661260822182402458.htm",
+      "title": "Thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn Thành phố (tại phường Phú Diễn, phường Việt Hưng)",
+      "published_at": "2026-08-22",
+      "crawled_at": "2026-08-29T21:46:48+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội trên địa bàn Thành phố",
+        "raw_line": "Thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn Thành phố (tại phường Phú Diễn, phường Việt Hưng)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "266126081914262094",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-bo-cong-khai-thong-tin-du-an-dau-tu-xay-dung-nha-o-xa-hoi-dong-truc-thach-that-tai-xa-ha-bang-thanh-pho-ha-noi-266126081914262094.htm",
+      "title": "Công bố công khai thông tin dự án đầu tư xây dựng nhà ở xã hội Đồng Trúc - Thạch Thất tại xã Hạ Bằng, thành phố Hà Nội",
+      "published_at": "2026-08-19",
+      "crawled_at": "2026-08-29T21:46:53+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "low_confidence",
+      "dia_diem": {
+        "value": "xã Hạ Bằng, thành phố Hà Nội",
+        "raw_line": "xã Hạ Bằng, thành phố Hà Nội.",
+        "confidence": "high"
+      },
+      "so_can_ban": {
+        "value": 207,
+        "raw_line": "- Số căn hộ nhà ở xã hội để bán: 207 căn hộ với diện tích khoảng 14.110,47 m2 (tương đương 89,7% tổng diện tích sàn sử dụng nhà ở xã hội).",
+        "confidence": "high"
+      },
+      "gia_ban": {
+        "value": 23500000,
+        "raw_line": "- Giá bán căn hộ NOXH bình quân: 23.500.000 đồng/m2 (bao gồm VAT);",
+        "confidence": "high"
+      },
+      "gia_thue": {
+        "value": 89000,
+        "unit": "đ/m2/tháng",
+        "raw_line": "- Giá cho thuê căn hộ NOXH bình quân: 89.000 đồng/m2/tháng (bao gồm VAT).",
+        "confidence": "high"
+      },
+      "gia_thue_mua": {
+        "value": 178000,
+        "unit": "đ/m2/tháng",
+        "raw_line": "- Giá cho thuê mua NOXH bình quân: 178.000 đồng/m2/tháng (bao gồm VAT);",
+        "confidence": "high"
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "quarter",
+        "quarter": 3,
+        "year": 2026,
+        "raw_line": "Dự kiến trong Quý III năm 2026",
+        "confidence": "high"
+      },
+      "luu_y": [
+        "10. Giá bán, giá cho thuê mua, giá cho thuê nhà ở xã hội (tạm tính):",
+        "- Giá bán căn hộ NOXH bình quân: 23.500.000 đồng/m2 (bao gồm VAT);",
+        "- Giá cho thuê mua NOXH bình quân: 178.000 đồng/m2/tháng (bao gồm VAT);",
+        "- Giá cho thuê căn hộ NOXH bình quân: 89.000 đồng/m2/tháng (bao gồm VAT).",
+        "(Giá bán, giá cho thuê nêu trên chỉ là tạm tính. Giá bán, giá thuê mua, giá cho thuê NOXH chính thức sẽ thực hiện theo Thông báo kết quả thẩm định giá của Sở Xây dựng và chủ đầu tư phê duyệt theo quy định hiện hành.)"
+      ]
+    },
+    {
+      "id": "2661260818140910032",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-bo-cong-khai-thong-tin-du-an-nha-cao-tang-ct1-ct2-nha-o-xa-hoi-du-an-mo-rong-khu-nha-o-minh-giang-dam-va-xa-me-linh-tp-ha-noi-sau-khi-khoi-cong-2661260818140910032.htm",
+      "title": "Công bố công khai thông tin dự án nhà cao tầng CT1, CT2 (nhà ở xã hội) - Dự án Mở rộng khu nhà ở Minh Giang - Đầm Và, xã Mê Linh, TP Hà Nội sau khi khởi công",
+      "published_at": "2026-08-18",
+      "crawled_at": "2026-08-29T21:46:59+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "low_confidence",
+      "dia_diem": {
+        "value": "xã Mê Linh, thành phố Hà Nội",
+        "raw_line": "xã Mê Linh, thành phố Hà Nội.",
+        "confidence": "high"
+      },
+      "so_can_ban": {
+        "value": 713,
+        "raw_line": "- Số căn hộ nhà ở xã hội để bán dự kiến: 713 căn hộ với diện tích khoảng 46.046,4 m2 (tương đương 90% tổng diện tích sàn nhà ở của dự án).",
+        "confidence": "high"
+      },
+      "gia_ban": {
+        "value": 24000000,
+        "raw_line": "- Giá bán căn hộ NOXH: 24.000.000 đồng/m2 (đã bao gồm VAT và chưa bao gồm KPBT);",
+        "confidence": "high"
+      },
+      "gia_thue": {
+        "value": 110000,
+        "unit": "đ/m2/tháng",
+        "raw_line": "- Giá cho thuê căn hộ NOXH: 110.000 đồng/m2/tháng (không bao gồm VAT, KPBT và chi phí mua sắm trang thiết bị nội thất, đồ dùng sinh hoạt trong nhà ở xã hội cho thuê).",
+        "confidence": "high"
+      },
+      "gia_thue_mua": {
+        "value": 235000,
+        "unit": "đ/m2/tháng",
+        "raw_line": "- Giá cho thuê mua NOXH: 235.000 đồng/m2/tháng (đã bao gồm VAT và chưa bao gồm KPBT);",
+        "confidence": "high"
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "quarter",
+        "quarter": 1,
+        "year": 2027,
+        "raw_line": "Dự kiến trong Quý I năm 2027",
+        "confidence": "high"
+      },
+      "luu_y": [
+        "10. Giá bán, giá cho thuê nhà ở xã hội (tạm tính):",
+        "- Giá bán căn hộ NOXH: 24.000.000 đồng/m2 (đã bao gồm VAT và chưa bao gồm KPBT);",
+        "- Giá cho thuê mua NOXH: 235.000 đồng/m2/tháng (đã bao gồm VAT và chưa bao gồm KPBT);",
+        "- Giá cho thuê căn hộ NOXH: 110.000 đồng/m2/tháng (không bao gồm VAT, KPBT và chi phí mua sắm trang thiết bị nội thất, đồ dùng sinh hoạt trong nhà ở xã hội cho thuê).",
+        "(Giá bán, giá cho thuê nêu trên chỉ là tạm tính theo Tổng mức đầu tư điều chỉnh trình phê duyệt. Giá bán, giá cho thuê NOXH chính thức sẽ thực hiện theo thông báo kết quả thẩm tra của đơn vị thẩm tra và văn bản phê duyệt giá bán của Chủ đầu tư.)"
+      ]
+    },
+    {
+      "id": "2661260817103116106",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-thanh-xuan-xa-ngoc-hoi-2661260817103116106.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thanh Xuân, xã Ngọc Hồi",
+      "published_at": "2026-08-17",
+      "crawled_at": "2026-08-29T21:47:04+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Thanh Xuân",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thanh Xuân, xã Ngọc Hồi",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260813100554064",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/thong-tin-de-xuat-du-an-dau-tu-xay-dung-nha-o-xa-hoi-tren-dia-ban-thanh-pho-2661260813100554064.htm",
+      "title": "Thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn Thành phố",
+      "published_at": "2026-08-13",
+      "crawled_at": "2026-08-29T21:47:10+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội trên địa bàn Thành phố",
+        "raw_line": "Thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn Thành phố",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260811103714657",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-hoang-liet-phuong-thanh-liet-2661260811103714657.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Hoàng Liệt, phường Thanh Liệt",
+      "published_at": "2026-08-11",
+      "crawled_at": "2026-08-29T21:47:15+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Hoàng Liệt",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Hoàng Liệt, phường Thanh Liệt",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260806171513052",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/thong-tin-cac-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-xa-thuong-phuc-xa-phuong-duc-2661260806171513052.htm",
+      "title": "Thông tin các hồ sơ đề xuất dự án nhà ở xã hội tại xã Thượng Phúc, xã Phượng Dực",
+      "published_at": "2026-08-06",
+      "crawled_at": "2026-08-29T21:47:20+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại xã Thượng Phúc",
+        "raw_line": "Thông tin các hồ sơ đề xuất dự án nhà ở xã hội tại xã Thượng Phúc, xã Phượng Dực",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260806084610573",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/thong-tin-so-cho-o-can-ho-da-cho-thue-va-so-cho-trong-can-ho-trong-tai-02-khu-nha-o-sinh-vien-va-nha-o-xa-hoict19a-viet-hung-thang-7-2026-2661260806084610573.htm",
+      "title": "Thông tin số chỗ ở, căn hộ đã cho thuê và số chỗ trống, căn hộ trống tại 02 khu nhà ở sinh viên và nhà ở xã hội\nCT19A Việt Hưng tháng 7/2026",
+      "published_at": "2026-08-06",
+      "crawled_at": "2026-08-29T21:47:25+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội\nCT19A Việt Hưng tháng 7/2026",
+        "raw_line": "Thông tin số chỗ ở, căn hộ đã cho thuê và số chỗ trống, căn hộ trống tại 02 khu nhà ở sinh viên và nhà ở xã hội\nCT19A Việt Hưng tháng 7/2026",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": 515,
+        "raw_line": "- Số căn hộ theo thiết kế tại Khu nhà: 515 căn hộ",
+        "confidence": "low"
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "266126080510194392",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-bo-cong-khai-ke-hoach-tiep-nhan-ho-so-dang-ky-mua-thue-mua-nha-o-xa-hoi-tai-o-dat-ct1-ct2-ct3-ct4-thuoc-du-an-khu-nha-o-do-thi-kim-hoa-xa-kim-hoa-huyen-me-linh-nay-la-xa-tien-thang-tp-ha-noi-266126080510194392.htm",
+      "title": "Công bố công khai kế hoạch tiếp nhận hồ sơ đăng ký mua, thuê mua Nhà ở xã hội tại ô đất CT1, CT2, CT3, CT4 thuộc dự án Khu nhà ở đô thị Kim Hoa, xã Kim Hoa, huyện Mê Linh (nay là xã Tiến Thắng) đợt 2",
+      "published_at": "2026-08-05",
+      "crawled_at": "2026-08-29T21:47:37+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "low_confidence",
+      "dia_diem": {
+        "value": "Xã Kim Hoa, huyện Mê Linh, TP Hà Nội (nay là xã Tiến Thắng, thành phố Hà Nội",
+        "raw_line": "Xã Kim Hoa, huyện Mê Linh, TP Hà Nội (nay là xã Tiến Thắng, thành phố Hà Nội.",
+        "confidence": "high"
+      },
+      "so_can_ban": {
+        "value": 648,
+        "raw_line": "+ Số căn nhà ở xã hội để bán: 648 căn.",
+        "confidence": "high"
+      },
+      "gia_ban": {
+        "value": 19805791,
+        "raw_line": "- Giá bán nhà ở xã hội là 19.805.791 đồng/m2 sàn sử dụng (đã bao gồm thuế giá trị gia tăng và chưa bao gồm phí bảo trì).",
+        "confidence": "high"
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": 244515,
+        "unit": "đ/m2/tháng",
+        "raw_line": "- Giá thuê mua nhà ở xã hội là 244.515 đồng/m2/tháng (đã bao gồm thuế giá trị gia tăng và chưa bao gồm 2% phí bảo trì).",
+        "confidence": "high"
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": [
+        "- Giá bán nhà ở xã hội là 19.805.791 đồng/m2 sàn sử dụng (đã bao gồm thuế giá trị gia tăng và chưa bao gồm phí bảo trì).",
+        "- Phí bảo trì (2% giá bán trước thuế) là 377.253 đồng/m2.",
+        "- Giá thuê mua nhà ở xã hội là 244.515 đồng/m2/tháng (đã bao gồm thuế giá trị gia tăng và chưa bao gồm 2% phí bảo trì).",
+        "- Chủ đầu tư chỉ tiếp nhận hồ sơ tại địa điểm duy nhất đã được công bố theo quy định.",
+        "- Hộ gia đình, cá nhân có nhu cầu mua, thuê mua hoặc thuê nhà ở xã hội chỉ nộp hồ sơ trực tiếp tại địa điểm tiếp nhận hồ sơ của chủ đầu tư theo hướng dẫn được công khai trên Trang thông tin điện tử của Sở Xây dựng Hà Nội (www.soxaydung.hanoi.gov.vn) và trên trang thông tin điện tử chính thức của chủ đầu tư dự án; không nộp hồ sơ thông qua các tổ chức, cá nhân trung gian hoặc sàn giao dịch không được ủy quyền."
+      ]
+    },
+    {
+      "id": "2661260803112041456",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-de-xuat-du-an-dau-tu-xay-dung-nha-o-xa-hoi-tren-dia-ban-thanh-pho-ha-noi-tai-phuong-xuan-phuong-xa-kieu-phu-2661260803112041456.htm",
+      "title": "Công khai thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn thành phố Hà Nội tại phường Xuân Phương, xã Kiều Phú",
+      "published_at": "2026-08-03",
+      "crawled_at": "2026-08-29T21:47:42+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội trên địa bàn thành phố Hà Nội tại phường Xuân Phương",
+        "raw_line": "Công khai thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn thành phố Hà Nội tại phường Xuân Phương, xã Kiều Phú",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260730160055895",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-cong-trinh-nha-o-xa-hoi-ct2-thuoc-du-an-khu-nha-o-tai-diem-x2-phuong-tran-phu-quan-hoang-mai-ha-noi-nay-thuoc-phuong-linh-nam-ha-noi-sau-khi-khoi-cong-2661260730160055895.htm",
+      "title": "Công khai thông tin công trình Nhà ở xã hội CT2 thuộc Dự án Khu nhà ở tại điểm X2 phường Trần Phú, quận Hoàng Mai, Hà Nội (nay thuộc phường Lĩnh Nam, Hà Nội) sau khi khởi công",
+      "published_at": "2026-07-30",
+      "crawled_at": "2026-08-29T21:47:47+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "low_confidence",
+      "dia_diem": {
+        "value": "Khu đất tại điểm X2, phường Lĩnh Nam, Hà Nội",
+        "raw_line": "Khu đất tại điểm X2, phường Lĩnh Nam, Hà Nội",
+        "confidence": "high"
+      },
+      "so_can_ban": {
+        "value": 24,
+        "raw_line": "- Số căn hộ để bán thương mại: 24 căn hộ với diện tích khoảng 1.650 m",
+        "confidence": "high"
+      },
+      "gia_ban": {
+        "value": 28400000,
+        "raw_line": "- Giá bán căn hộ NƠXH: 28.400.000 đồng/m",
+        "confidence": "high"
+      },
+      "gia_thue": {
+        "value": 110000,
+        "unit": "đ/m2",
+        "raw_line": "- Giá cho thuê căn hộ NƠXH: 110.000 đồng/m",
+        "confidence": "high"
+      },
+      "gia_thue_mua": {
+        "value": 207120,
+        "unit": "đ/m2",
+        "raw_line": "- Giá cho thuê mua NƠXH: 207.120 đồng/m",
+        "confidence": "high"
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "quarter",
+        "quarter": 1,
+        "year": 2027,
+        "raw_line": "- Tiến độ thực hiện dự án: Dự kiến hoàn thành công trình đưa vào sử dụng Quý I năm 2027.",
+        "confidence": "high"
+      },
+      "luu_y": [
+        "10. Giá bán, giá cho thuê nhà ở xã hội (tạm tính):",
+        "(bao gồm VAT và phí bảo trì).",
+        "/tháng (bao gồm VAT và phí bảo trì).",
+        "(Giá bán, giá cho thuê nêu trên chỉ là tạm tính theo Tổng mức đầu tư điều chỉnh trình phê duyệt. Giá bán, giá thuê mua, giá cho thuê NƠXH chính thức sẽ thực hiện theo Thông báo kết quả thẩm định giá của Sở Xây dựng và chủ đầu tư phê duyệt theo quy định hiện hành).",
+        "- Chủ đầu tư chỉ tiếp nhận hồ sơ nộp tại địa điểm duy nhất nêu trên."
+      ]
+    },
+    {
+      "id": "2661260730160459645",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-xa-thu-lam-2661260730160459645.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại xã Thư Lâm",
+      "published_at": "2026-07-29",
+      "crawled_at": "2026-08-29T21:47:53+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại xã Thư Lâm",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại xã Thư Lâm",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260727095128982",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-vinh-hung-xa-soc-son-phuong-xuan-phuong-2661260727095128982.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Vĩnh Hưng, xã Sóc Sơn, phường Xuân Phương",
+      "published_at": "2026-07-27",
+      "crawled_at": "2026-08-29T21:47:58+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Vĩnh Hưng",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Vĩnh Hưng, xã Sóc Sơn, phường Xuân Phương",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "266126072709315096",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-bo-cong-khai-ke-hoach-tiepnhan-ho-so-dang-ky-mua-noxh-can-thue-chuyen-ban-tai-toa-oxh2-du-an-dau-tu-xay-dung-nha-o-xa-hoi-kien-hung-sau-05-namcho-thue-dot-3-266126072709315096.htm",
+      "title": "Công bố công khai kế hoạch tiếp nhận hồ sơ đăng ký mua NOXH (căn thuê chuyển bán) tại Tòa OXH2- Dự án đầu tư xây dựng Nhà ở xã hội Kiến Hưng sau 05 năm\ncho thuê (Đợt 3)",
+      "published_at": "2026-07-24",
+      "crawled_at": "2026-08-29T21:48:03+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "low_confidence",
+      "dia_diem": {
+        "value": "Ô đất ký hiệu B-XH, Khu đô thị mới Kiến Hưng, phường Kiến Hưng, thành phố Hà Nội",
+        "raw_line": "3.   Địa điểm xây dựng: Ô đất ký hiệu B-XH, Khu đô thị mới Kiến Hưng, phường Kiến Hưng, thành phố Hà Nội.",
+        "confidence": "high"
+      },
+      "so_can_ban": {
+        "value": 305,
+        "raw_line": "Số căn nhà ở xã hội để bán                 : 305 căn (chiếm 61% diện tích căn hộ)",
+        "confidence": "high"
+      },
+      "gia_ban": {
+        "value": 13695400,
+        "raw_line": "- Giá bán nhà ở xã hội Tòa OXH2 là: 13.695.400 đồng/m2 (đã bao gồm thuế GTGT, chưa có kinh phí bảo trì).",
+        "confidence": "high"
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": [
+        "- Giá bán nhà ở xã hội Tòa OXH2 là: 13.695.400 đồng/m2 (đã bao gồm thuế GTGT, chưa có kinh phí bảo trì).",
+        "- Chủ đầu tư chỉ tiếp nhận hồ sơ tại địa điểm duy nhất đã được công bố theo quy định.",
+        "- Hộ gia đình, cá nhân có nhu cầu mua, thuê mua hoặc thuê nhà ở xã hội chỉ nộp hồ sơ trực tiếp tại địa điểm tiếp nhận hồ sơ của chủ đầu tư theo hướng dẫn được công khai trên Trang thông tin điện tử của Sở Xây dựng Hà Nội (www.soxaydung.hanoi.gov.vn) và trên trang thông tin điện tử chính thức của chủ đầu tư dự án; không nộp hồ sơ thông qua các tổ chức, cá nhân trung gian hoặc sàn giao dịch không được ủy quyền.",
+        "- Người đăng ký mua, thuê, thuê mua nhà ở xã hội phải cam kết chưa được hưởng chính sách hỗ trợ về nhà ở; đồng thời chịu trách nhiệm trước pháp luật về tính chính xác, trung thực của hồ sơ và việc đáp ứng đầy đủ đối tượng, điều kiện được hưởng chính sách nhà ở xã hội theo quy định hiện hành.",
+        "- Chủ đầu tư chỉ được huy động vốn, thu tiền ứng trước của khách hàng sau khi dự án đáp ứng đầy đủ điều kiện huy động vốn theo quy định của Luật Kinh doanh bất động sản năm 2023 và các quy định pháp luật có liên quan."
+      ]
+    },
+    {
+      "id": "2661260723144414957",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-thanh-liet-phuong-viet-hung-phuong-dong-ngac-phuong-xuan-phuong-phuong-hoang-liet-2661260723144414957.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thanh Liệt, phường Việt Hưng, phường Đông Ngạc, phường Xuân Phương, phường Hoàng Liệt",
+      "published_at": "2026-07-23",
+      "crawled_at": "2026-08-29T21:48:09+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Thanh Liệt",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thanh Liệt, phường Việt Hưng, phường Đông Ngạc, phường Xuân Phương, phường Hoàng Liệt",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260721163014973",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-xuan-phuong-xa-tay-phuong-xa-binh-minh-xa-dan-phuong-2661260721163014973.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại phường Xuân Phương, xã Tây Phương, xã Bình Minh, xã Đan Phượng)",
+      "published_at": "2026-07-21",
+      "crawled_at": "2026-08-29T21:48:14+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (tại phường Xuân Phương, xã Tây Phương, xã Bình Minh, xã Đan Phượng)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260727095400388",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/phe-duyet-cap-nhat-danh-muc-cac-du-an-dau-tu-xay-dung-nha-o-khu-do-thi-trong-ke-hoach-phat-trien-nha-o-thanh-pho-ha-noi-giai-doan-2026-2030-dot-1-2661260727095400388.htm",
+      "title": "Phê duyệt cập nhật danh mục các dự án đầu tư xây dựng nhà ở, khu đô thị trong Kế hoạch phát triển nhà ở thành phố Hà Nội giai đoạn 2026-2030 (đợt 1)",
+      "published_at": "2026-07-18",
+      "crawled_at": "2026-08-29T21:48:20+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260716092323848",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-du-an-dau-tu-xay-dung-noxd-ift-linh-nam-2661260716092323848.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (Dự án đầu tư xây dựng NOXD IFT Lĩnh Nam)",
+      "published_at": "2026-07-16",
+      "crawled_at": "2026-08-29T21:48:25+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội (Dự án đầu tư xây dựng NOXD IFT Lĩnh Nam)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    }
+  ]
+}

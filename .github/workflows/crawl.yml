@@ -1,0 +1,31 @@
+name: Crawl NOXH listings
+
+on:
+  schedule:
+    - cron: '0 19 * * *'   # 02:00 Vietnam time (UTC+7)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r crawler/requirements.txt
+
+      - run: python -m crawler.crawl
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/projects.json data/seen.json
+          git diff --cached --quiet || git commit -m "chore: nightly NOXH crawl update"
+          git push
