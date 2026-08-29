@@ -118,11 +118,20 @@ def crawl_listing(client: httpx.Client, seen_ids: set[str], full: bool = False, 
             return
 
         html = fetch_listing_page(client, page_index)
+
+        # Past the last real page the API returns a genuinely empty body
+        # (0 bytes, not an HTML fragment with zero items) — checked before
+        # parsing, and before counting the page, so a probe past the end of
+        # the archive doesn't inflate the reported page count.
+        if not html.strip():
+            log.info("page %d returned an empty response — end of archive", page_index)
+            return
+
         items = parse_listing(html)
         stats["pages"] = page_index + 1
 
         if not items:
-            log.info("page %d empty — end of archive", page_index)
+            log.info("page %d had no items — end of archive", page_index)
             return
 
         if not full and all(item["id"] in seen_ids for item in items):
