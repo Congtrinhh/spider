@@ -3,6 +3,7 @@
 import logging
 import time
 from datetime import datetime
+from urllib.parse import urlsplit
 
 import httpx
 from selectolax.parser import HTMLParser
@@ -11,9 +12,20 @@ from . import config
 
 log = logging.getLogger("noxh.fetch")
 
+RELAY_SECRET_HEADER = "X-Relay-Secret"
+
 
 class FetchError(Exception):
     """Raised when a request exhausts its retries."""
+
+
+def _relay_url(url: str) -> str:
+    """Rewrite a logical site URL to route through the Cloudflare relay
+    (config.RELAY_URL), preserving path + query. Callers keep passing the
+    real site URL — this is the only place that knows the relay exists."""
+    parts = urlsplit(url)
+    path_and_query = parts.path + (f"?{parts.query}" if parts.query else "")
+    return config.RELAY_URL.rstrip("/") + path_and_query
 
 
 def make_client() -> httpx.Client:
@@ -29,7 +41,15 @@ def _sleep_politely():
 
 
 def request_with_retry(client: httpx.Client, method: str, url: str, **kwargs) -> httpx.Response:
-    """GET/POST with exponential backoff on 5xx/timeout, MAX_RETRIES attempts."""
+    """GET/POST with exponential backoff on 5xx/timeout, MAX_RETRIES attempts.
+    Transparently routed through the Cloudflare relay when config.RELAY_URL
+    is set — callers always pass the real site URL and never need to know."""
+    if config.RELAY_URL:
+        headers = dict(kwargs.get("headers") or {})
+        headers[RELAY_SECRET_HEADER] = config.RELAY_SECRET
+        kwargs["headers"] = headers
+        url = _relay_url(url)
+
     last_exc = None
     for attempt in range(config.MAX_RETRIES):
         try:

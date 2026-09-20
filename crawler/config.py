@@ -1,5 +1,7 @@
 """Configuration. created by tqcong, 29/08/2026"""
 
+import os
+
 # ---------------------------------------------------------------- site profiles
 # The four base64 params are opaque ciphertext produced by the portal's own JS.
 # We never decode them — we replay them. They are host-specific: when switching
@@ -47,6 +49,16 @@ SEEN_JSON = "data/seen.json"
 # ---------------------------------------------------------------- extraction
 PRICE_SANITY_MIN = 5_000_000    # đ/m² — below this, almost certainly a rent figure
 PRICE_SANITY_MAX = 80_000_000   # đ/m² — above this, almost certainly a total price
+
+# ---------------------------------------------------------------- relay (optional)
+# TCP connections to the demo host are blocked from at least two independent
+# hosting-provider ASNs (a GitHub-hosted runner and this project's own Hetzner
+# VPS — see SELF_HOSTED_RUNNER.md), while direct connections work fine from
+# non-datacenter-flagged networks. When RELAY_URL is set, requests are routed
+# through a small Cloudflare Worker relay instead of connecting directly.
+# Unset (the default) — nothing changes, connect straight to the site.
+RELAY_URL = os.environ.get("NOXH_RELAY_URL")        # e.g. https://noxh-relay.<subdomain>.workers.dev
+RELAY_SECRET = os.environ.get("NOXH_RELAY_SECRET")
 
 # ---------------------------------------------------------------- UI defaults
 # Written into projects.json meta so the frontend reads them from one place.

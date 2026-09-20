@@ -1,13 +1,13 @@
 {
   "meta": {
-    "crawled_at": "2026-08-30T09:30:45+07:00",
+    "crawled_at": "2026-09-15T22:49:24+07:00",
     "site": "demo",
     "base_url": "https://soxaydung-demo.hanoi.gov.vn",
-    "total": 1002,
+    "total": 1008,
     "counts": {
       "parsed": 40,
       "low_confidence": 184,
-      "failed": 778
+      "failed": 784
     },
     "defaults": {
       "max_price": 20000000,
@@ -16,6 +16,231 @@
     }
   },
   "projects": [
+    {
+      "id": "266126091514345128",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-phu-dien-266126091514345128.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Phú Diễn",
+      "published_at": "2026-09-15",
+      "crawled_at": "2026-09-15T22:48:42+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Phú Diễn",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Phú Diễn",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260910124154819",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-thuong-cat-2661260910124154819.htm",
+      "title": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thượng Cát",
+      "published_at": "2026-09-10",
+      "crawled_at": "2026-09-15T22:48:47+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội tại phường Thượng Cát",
+        "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Thượng Cát",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260909090212146",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/thong-tin-so-cho-o-can-ho-da-cho-thue-va-so-cho-trong-can-ho-trong-tai-02-khu-nha-o-sinh-vien-va-nha-o-xa-hoi-ct19a-viet-hung-thang-8-2026-len-cong-thong-tin-dien-tu-cua-so-xay-dung-2661260909090212146.htm",
+      "title": "Thông tin số chỗ ở, căn hộ đã cho thuê và số chỗ trống, căn hộ trống tại 02 khu nhà ở sinh viên và nhà ở xã hội CT19A Việt Hưng tháng 8/2026 lên cổng thông tin điện tử của Sở Xây dựng",
+      "published_at": "2026-09-09",
+      "crawled_at": "2026-09-15T22:48:53+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội CT19A Việt Hưng tháng 8/2026 lên cổng thông tin điện tử của Sở Xây dựng",
+        "raw_line": "Thông tin số chỗ ở, căn hộ đã cho thuê và số chỗ trống, căn hộ trống tại 02 khu nhà ở sinh viên và nhà ở xã hội CT19A Việt Hưng tháng 8/2026 lên cổng thông tin điện tử của Sở Xây dựng",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": 515,
+        "raw_line": "- Số căn hộ theo thiết kế tại Khu nhà: 515 căn hộ.",
+        "confidence": "low"
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": [
+        "Để kịp thời công khai minh bạch các thông tin về số chỗ trống, căn hộ trống đối với 02 khu nhà ở sinh viên Pháp Vân - Tứ Hiệp và Mỹ Đình II và khu nhà ở xã hội CT19A Việt Hưng do Trung tâm Quản lý nhà thành phố Hà Nội (Sau đây gọi tắt là Trung tâm) được giao quản lý. Đồng thời đảm bảo cho người thuê nhà đủ điều kiện tiếp cận được các thông tin, Sở Xây dựng đăng tải số liệu chỗ ở, căn hộ đã cho thuê và số chỗ trống, căn hộ trống tại 02 khu nhà ở sinh viên và nhà ở xã hội CT19A Việt Hưng tháng 8/2026 (Từ ngày 01/8/2026 đến hết ngày 31/8/2026) lên cổng thông tin điện tử của Sở Xây dựng, cụ thể như sau:"
+      ]
+    },
+    {
+      "id": "2661260907093910141",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/danh-sach-du-an-dau-tu-xay-dung-khong-nam-trong-hanh-lang-an-toan-doi-voi-khu-vuc-can-dam-bao-an-ninh-cho-phep-to-chuc-ca-nhan-nuoc-ngoai-duoc-so-huu-nha-o-tren-dia-ban-thanh-pho-ha-noi-2661260907093910141.htm",
+      "title": "Danh sách Dự án đầu tư xây dựng không nằm trong hành lang an toàn đối với khu vực cần đảm bảo an ninh, cho phép tổ chức, cá nhân nước ngoài được sở hữu nhà ở trên địa bàn thành phố Hà Nội",
+      "published_at": "2026-09-07",
+      "crawled_at": "2026-09-15T22:48:58+07:00",
+      "tags": [
+        "noxh"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260907093001651",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-de-xuat-du-an-dau-tu-xay-dung-nha-o-xa-hoi-tren-dia-ban-thanh-pho-ha-noi-tai-xa-son-dong-phuong-vinh-hung-2661260907093001651.htm",
+      "title": "Công khai thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn thành phố Hà Nội (tại xã Sơn Đồng, phường Vĩnh Hưng, phường Yên Nghĩa, xã Ô Diên)",
+      "published_at": "2026-09-07",
+      "crawled_at": "2026-09-15T22:49:03+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": "xã hội trên địa bàn thành phố Hà Nội",
+        "raw_line": "Công khai thông tin đề xuất dự án đầu tư xây dựng nhà ở xã hội trên địa bàn thành phố Hà Nội (tại xã Sơn Đồng, phường Vĩnh Hưng, phường Yên Nghĩa, xã Ô Diên)",
+        "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
     {
       "id": "2661260828152802271",
       "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-thong-tin-vi-tri-o-dat-theo-ho-so-de-xuat-du-an-nha-o-xa-hoi-tai-phuong-viet-hung-phuong-xuan-phuong-2661260828152802271.htm",
@@ -360,6 +585,51 @@
         "value": "xã hội tại phường Hoàng Liệt",
         "raw_line": "Công khai thông tin vị trí ô đất theo hồ sơ đề xuất dự án nhà ở xã hội tại phường Hoàng Liệt, phường Thanh Liệt",
         "confidence": "low"
+      },
+      "so_can_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_ban": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "gia_thue_mua": {
+        "value": null,
+        "unit": null,
+        "raw_line": null,
+        "confidence": null
+      },
+      "thoi_gian_nop_ho_so": {
+        "kind": "none",
+        "raw_line": null,
+        "confidence": null
+      },
+      "luu_y": []
+    },
+    {
+      "id": "2661260915142137524",
+      "url": "https://soxaydung-demo.hanoi.gov.vn/phat-trien-nha-o/cong-khai-du-thao-ke-hoach-cai-tao-xay-dung-lai-khu-tap-the-truong-dinh-nha-a-b-c-d-e-h1-h2-h3-h4-h5-2661260915142137524.htm",
+      "title": "Công khai dự thảo Kế hoạch cải tạo, xây dựng lại Khu tập thể Trương Định (Nhà A, B, C, D, E, H1, H2, H3, H4, H5)",
+      "published_at": "2026-08-10",
+      "crawled_at": "2026-09-15T22:49:13+07:00",
+      "tags": [
+        "noxh",
+        "cong-khai-thong-tin"
+      ],
+      "status": "failed",
+      "dia_diem": {
+        "value": null,
+        "raw_line": null,
+        "confidence": null
       },
       "so_can_ban": {
         "value": null,

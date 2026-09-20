@@ -16,6 +16,7 @@ See [`IMPLEMENTATION.md`](./IMPLEMENTATION.md) for the full spec this was built 
 crawler/         # Python crawler (config, fetch, extract, entry point)
 docs/            # GitHub Pages root — index.html + projects.json
 data/seen.json   # {data_id: iso_crawled_at}, drives incremental crawling
+infra/           # Cloudflare Worker relay (see Known risks / SELF_HOSTED_RUNNER.md)
 .github/workflows/crawl.yml   # nightly cron
 ```
 
@@ -59,8 +60,12 @@ network tab, they are opaque per-host ciphertext).
 - **Wording drift.** Extraction patterns are anchored to current phrasing. The *Cần kiểm tra*
   count on the frontend is the early-warning signal for this — watch it; the spec expects ~10
   rows, not hundreds.
-- **GitHub-runner IP blocks.** Untested against the CI runner's IP range — run `workflow_dispatch`
-  manually at least once before trusting the nightly cron.
+- **Datacenter-ASN IP blocks — confirmed, not just theoretical.** TCP connections to the demo host
+  are blocked from both GitHub-hosted Actions runners *and* a self-hosted runner on Hetzner
+  (AS24940) — a blanket "block generic hosting-provider ASN traffic" policy, not something
+  GitHub-specific. Fixed by relaying requests through a Cloudflare Worker instead of connecting
+  directly. See [`SELF_HOSTED_RUNNER.md`](./SELF_HOSTED_RUNNER.md) for the full story and setup
+  steps, and `infra/relay-worker.js` for the relay itself.
 
 ## Implementation notes
 
