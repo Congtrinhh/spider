@@ -27,14 +27,29 @@ export default {
     // and force the connection to that IP with cf.resolveOverride, while
     // keeping the Host header + TLS SNI/cert validation on the real
     // hostname — resolveOverride is documented to preserve exactly that.
-    const dohResp = await fetch(
-      `https://dns.google/resolve?type=A&name=${UPSTREAM_HOST}`,
-      { headers: { Accept: "application/dns-json" } }
-    );
-    const dohData = await dohResp.json();
-    const ip = dohData.Answer?.find((a) => a.type === 1)?.data;
-    if (!ip) {
-      return new Response("Relay: could not resolve upstream host via DoH", { status: 502 });
+    //
+    // Both fetches are wrapped so a failure returns the real JS error text
+    // instead of an opaque platform-level 5xx — needed while we're still
+    // narrowing down exactly which step this particular block affects.
+    let ip;
+    try {
+      const dohResp = await fetch(
+        `https://dns.google/resolve?type=A&name=${UPSTREAM_HOST}`,
+        { headers: { Accept: "application/dns-json" } }
+      );
+      const dohData = await dohResp.json();
+      ip = dohData.Answer?.find((a) => a.type === 1)?.data;
+      if (!ip) {
+        return new Response(
+          `Relay: DoH returned no A record. Raw: ${JSON.stringify(dohData)}`,
+          { status: 502 }
+        );
+      }
+    } catch (err) {
+      return new Response(
+        `Relay: DoH lookup threw: ${err.stack || err.message || err}`,
+        { status: 502 }
+      );
     }
 
     const url = new URL(request.url);
@@ -44,16 +59,25 @@ export default {
     headers.delete(SECRET_HEADER);
     headers.delete("host");
 
-    const upstreamResp = await fetch(upstreamUrl, {
-      method: request.method,
-      headers,
-      body: ["GET", "HEAD"].includes(request.method) ? undefined : request.body,
-      cf: { resolveOverride: ip },
-    });
+    try {
+      const upstreamResp = await fetch(upstreamUrl, {
+        method: request.method,
+        headers,
+        body: ["GET", "HEAD"].includes(request.method) ? undefined : request.body,
+        cf: { resolveOverride: ip },
+      });
 
-    return new Response(upstreamResp.body, {
-      status: upstreamResp.status,
-      headers: upstreamResp.headers,
-    });
+      const respHeaders = new Headers(upstreamResp.headers);
+      respHeaders.set("X-Relay-Resolved-IP", ip);
+      return new Response(upstreamResp.body, {
+        status: upstreamResp.status,
+        headers: respHeaders,
+      });
+    } catch (err) {
+      return new Response(
+        `Relay: upstream fetch (resolveOverride=${ip}) threw: ${err.stack || err.message || err}`,
+        { status: 502 }
+      );
+    }
   },
 };
